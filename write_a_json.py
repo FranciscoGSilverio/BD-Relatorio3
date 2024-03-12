@@ -6,8 +6,6 @@ from bson import json_util # pip install bson
 def write_a_json(data, name: str):
     parsed_json = json.loads(json_util.dumps(data))
 
-    print('doing...')
-
     if not os.path.isdir("./json"):
         os.makedirs("./json")
         
